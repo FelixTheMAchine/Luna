@@ -1,0 +1,15 @@
+{
+  "iniciar": "LunaInicia.mp3",
+  "baixar volume": "LunaAbaixandoOSom.mp3",
+  "desligar": "LunaDesliga.mp3",
+  "entender": "LunaPedindoParaComeçarOPedidoComLuna.mp3",
+  "aleatório": "LunaTocaNoAleatorio.mp3",
+  "não entendeu o comando": "LunaNaoEntendeuOPedido.mp3",
+  "não reconhece": "LunaNaoEntendeu.mp3",
+  "repetir música": "LunaRepeteAMusica.mp3",
+  "subir volume": "LunaSubindoOVolume.mp3",
+  "próxima música": "LunaTrocaAMusica.mp3",
+  "voltar": "LunaVoltandoParaMusicaAnterior.mp3",
+  "voltou": "LunaInicia.mp3",
+  "oi": "LunaFalaOi.mp3"
+}
