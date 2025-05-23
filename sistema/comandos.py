@@ -22,6 +22,23 @@ def executar_acao(comando):
                 pyautogui.press(tecla)
             time.sleep(delay)
 
+     # ABRIR PROGRAMAS
+    if any(x in comando_sem_luna for x in ["abrir spotify", "abrir o spotify"]):
+        falar_luna("iniciar")
+        subprocess.Popen("C:\\Users\\splen\\AppData\\Roaming\\Spotify\\Spotify.exe")
+        return
+
+    elif any(x in comando_sem_luna for x in ["abrir discord", "abrir o discord"]):
+        falar_luna("iniciar")
+        subprocess.Popen("C:\\Users\\splen\\AppData\\Local\\DiscordPTB\\app-1.0.1143")
+        return
+
+    # Minimizar todas as janelas
+    elif any(x in comando_sem_luna for x in ["minimizar tudo", "mostrar desktop", "minimizar janelas"]):
+        falar_luna("desligar")
+        pyautogui.hotkey("win", "d")
+        return
+
     # === COMANDOS MULTIMÍDIA (já existentes) ===
     match_aumentar = re.search(r'(?:aumentar|subir|levantar) (?:volume )?(?:em )?(\d+)', comando_sem_luna)
     match_diminuir = re.search(r'(?:diminuir|abaixar|baixar) (?:volume )?(?:em )?(\d+)', comando_sem_luna)
